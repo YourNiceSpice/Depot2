@@ -21,4 +21,13 @@
 .byebug_history
 
 config/database.yml
-config/secrets.yml
+config/secrets.yml	
+
+db/migrate/20161126134827_create_products.rb
+db/migrate/20161127234122_create_carts.rb
+db/migrate/20161128001047_create_line_items.rb
+db/migrate/20161129090548_add_quantity_to_line_items.rb
+db/migrate/20161129100445_combine_items_in_cart.rb
+db/migrate/20161206174622_create_orders.rb
+db/migrate/20161206174703_add_order_to_line_item.rb
+db/migrate/20161207145719_create_users.rb
