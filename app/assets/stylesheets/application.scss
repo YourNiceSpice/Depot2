@@ -15,14 +15,42 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body, body > p, body > ol, body > ul, body > td { margin: 8px !important }
+body, body > p, body > ol, body > ul, body > td { 
 
+margin: 8px !important ;
+
+background: url("http://www.geraedu.org/images/pattern/p16.jpg");
+ background-size: 100%;
+
+}
+
+
+.container-fluid {
+
+
+
+background: rgba(73,165,191,0.74);
+background: -moz-linear-gradient(top, rgba(73,165,191,0.74) 0%, rgba(117,189,209,0.89) 59%, rgba(147,206,222,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(73,165,191,0.74)), color-stop(59%, rgba(117,189,209,0.89)), color-stop(100%, rgba(147,206,222,1)));
+background: -webkit-linear-gradient(top, rgba(73,165,191,0.74) 0%, rgba(117,189,209,0.89) 59%, rgba(147,206,222,1) 100%);
+background: -o-linear-gradient(top, rgba(73,165,191,0.74) 0%, rgba(117,189,209,0.89) 59%, rgba(147,206,222,1) 100%);
+background: -ms-linear-gradient(top, rgba(73,165,191,0.74) 0%, rgba(117,189,209,0.89) 59%, rgba(147,206,222,1) 100%);
+background: linear-gradient(to bottom, rgba(73,165,191,0.74) 0%, rgba(117,189,209,0.89) 59%, rgba(147,206,222,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#49a5bf', endColorstr='#93cede', GradientType=0 );
+
+ background-size: 100%;
+background-position: right bottom; /* Положение фона */
+    background-repeat: no-repeat; /* Отменяем повторение фона */
+  
+
+}
 #banner {
   position: relative;
-  min-height: 40px;
-  background: #9c9;
+  min-height: 70px;
+
+ 
   padding: 10px;
-  border-bottom: 2px solid;
+  border-bottom: 5px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
   color: #282;
   text-align: center;
@@ -30,8 +58,9 @@ body, body > p, body > ol, body > ul, body > td { margin: 8px !important }
   img {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 192px;
+    left: 330;
+  
+    width: 392px;
   }
 }
 

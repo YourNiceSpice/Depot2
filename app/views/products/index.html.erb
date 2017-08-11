@@ -1,7 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Products</h1>
-
+ <p><%= will_paginate @products %></p>
 <table>
   <% @products.each do |product| %>
     <tr class="<%= cycle('list_line_odd', 'list_line_even') %>">
@@ -9,6 +9,7 @@
       <td>
         <%= image_tag(product.image_url, class: 'list_image') %>
       </td>
+  
 
       <td class="list_description">
         <dl>
@@ -29,3 +30,4 @@
 <br/>
 
 <%= link_to 'New product', new_product_path %>
+ <p><%= will_paginate @products %></p>

@@ -1,7 +1,8 @@
 // Place all the styles related to the Store controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import "bootstrap-sprockets";
+@import "bootstrap";
 .store {
   h1 {
     margin: 0;
@@ -21,12 +22,13 @@
     
 
     h3 {
-      font-size: 120%;
+      font-size: 150%;
       font-family: sans-serif;
       margin-left: 100px;
       margin-top: 0;
       margin-bottom: 2px;
       color: #227;
+      text-decoration: underline;
     }
 
     p, div.price_line {
@@ -52,3 +54,6 @@ p, div.price_line {
     display: inline;
   }
 }
+   .pag {
+   margin: 102px;
+   }

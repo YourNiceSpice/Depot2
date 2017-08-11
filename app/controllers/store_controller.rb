@@ -5,10 +5,17 @@ class StoreController < ApplicationController
   skip_before_action :authorize
 
   def index
-    if params[:set_locale]
-      redirect_to store_index_url(locale: params[:set_locale])
-    else
-      @products = Product.order(:title)
-    end
+  #@products = Product.paginate page: params[:page], per_page: 10
+@products = Product.paginate page: params[:page], per_page: 9
+
+  
   end
+   
 end
+
+     #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает

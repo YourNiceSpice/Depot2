@@ -1,17 +1,28 @@
 class ProductsController < ApplicationController
-  before_action :set_product, only: [:show, :edit, :update, :destroy]
+ 
+  before_action :set_product, only: [:show, :edit, :update, :destroy, :who_bought]
 
   attr
 
   # GET /products
   # GET /products.json
   def index
-    @products = Product.all
-  end
+    
+    #@products = Product.all
+@products = Product.paginate page: params[:page], per_page: 10
+     #@products = Product.paginate(page: params[:page])
 
+  end
+  #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означаетs  
   # GET /products/1
   # GET /products/1.json
   def show
+    @product = Product.find(params[:id])
   end
 
   # GET /products/new
@@ -38,7 +49,12 @@ class ProductsController < ApplicationController
       end
     end
   end
-
+  #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
   # PATCH/PUT /products/1
   # PATCH/PUT /products/1.json
   def update
@@ -65,7 +81,12 @@ class ProductsController < ApplicationController
       end
     end
   end
-
+  #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
   # DELETE /products/1
   # DELETE /products/1.json
   def destroy
@@ -87,3 +108,9 @@ class ProductsController < ApplicationController
       params.require(:product).permit(:title, :description, :image_url, :price)
     end
 end
+  #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
+    #Cкопируй этот код в книгу.чтобы вспомнить что тот означает
